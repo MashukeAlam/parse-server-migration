@@ -16,7 +16,7 @@ const ngrok_1 = __importDefault(require("ngrok"));
 const parse_server_2 = require("@moralisweb3/parse-server");
 exports.app = (0, express_1.default)();
 moralis_1.default.start({
-    apiKey: config_1.default.MORALIS_API_KEY,
+    apiKey: config_1.default.MORALIS_API_KEY
 });
 exports.app.use(express_1.default.urlencoded({ extended: true }));
 exports.app.use(express_1.default.json());

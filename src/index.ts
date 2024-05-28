@@ -12,7 +12,7 @@ import { streamsSync } from '@moralisweb3/parse-server';
 export const app = express();
 
 Moralis.start({
-  apiKey: config.MORALIS_API_KEY,
+  apiKey: config.MORALIS_API_KEY
 });
 
 app.use(express.urlencoded({ extended: true }));
